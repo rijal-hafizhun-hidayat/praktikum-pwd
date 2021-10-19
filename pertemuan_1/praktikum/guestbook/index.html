@@ -11,27 +11,22 @@
             <font size="6" face="Courier New, Courier,mono">BUKUTAMU </font>
         </strong>
     </div>
-    <!-- tag form yang ketika semua data telah di submit, data akan di kirim ke proses.php -->
     <form name="form1" method="post" action="proses.php">
         <table width="58%" border="0" align="center">
             <tr>
                 <td>Nama Lengkap</td>
-                <!-- tag input text yang di berikan variabel nama -->
                 <td><input name="nama" type="text" id="nama"></td>
             </tr>
             <tr>
                 <td>Alamat</td>
-                <!-- tag input text yang di berikan variabel alamat -->
                 <td><input name="alamat" type="text" id="alamat"></td>
             </tr>
             <tr>
                 <td>E-Mail</td>
-                <!-- tag input email yang di berikan variabel email -->
                 <td><input name="email" type="text" id="email"></td>
             </tr>
             <tr>
                 <td>Status</td>
-                <!-- tag input select yang di berikan variabel status -->
                 <td><select name="status" id="status">
                         <option>Menikah</option>
                         <option>Single</option>
@@ -39,16 +34,11 @@
             </tr>
             <tr>
                 <td>Komentar</td>
-                <!-- tag input textarea yang di berikan variabel komentar -->
                 <td><textarea name="komentar" id="komentar"></textarea></td>
             </tr>
             <tr>
                 <td>&nbsp;</td>
-                <td>
-                    <!-- tag input submit yang di berikan variabel submit -->
-                    <input type="submit" name="Submit" value="Kirim">
-                    <!-- tag input reset yang di berikan variabel submit2 -->
-                    <input type="reset" name="Submit2" value="Batal">
+                <td><input type="submit" name="Submit" value="Kirim"><input type="reset" name="Submit2" value="Batal">
                 </td>
             </tr>
         </table>
