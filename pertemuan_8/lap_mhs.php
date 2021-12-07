@@ -11,7 +11,7 @@
     $pdf->Cell(10, 7,'',0, 1);
 
     $pdf->SetFont('Arial', 'B', 10);
-    $pdf->Cell(20, 6, 'NIM', 1, 0);
+    $pdf->Cell(25, 6, 'NIM', 1, 0);
     $pdf->Cell(50, 6, 'NAMA MAHASISWA', 1, 0);
     $pdf->Cell(25, 6, 'J KEL', 1, 0);
     $pdf->Cell(50, 6, 'ALAMAT', 1, 0);
@@ -22,7 +22,7 @@
     include 'koneksi.php';
     $mahasiswa = mysqli_query($con, "select * from mahasiswa");
     while ($row = mysqli_fetch_array($mahasiswa)) {
-        $pdf->Cell(20, 6, $row['nim'], 1, 0);
+        $pdf->Cell(25, 6, $row['nim'], 1, 0);
         $pdf->Cell(50, 6, $row['nama'], 1, 0);
         $pdf->Cell(25, 6, $row['jkel'], 1, 0);
         $pdf->Cell(50, 6, $row['alamat'], 1, 0);
