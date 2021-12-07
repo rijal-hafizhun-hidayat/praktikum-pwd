@@ -25,7 +25,7 @@
         $pdf->Cell(20, 6, $row['nim'], 1, 0);
         $pdf->Cell(50, 6, $row['nama'], 1, 0);
         $pdf->Cell(25, 6, $row['jkel'], 1, 0);
-        $pdf->Cell(50, 6, $row['nim'], 1, 0);
+        $pdf->Cell(50, 6, $row['alamat'], 1, 0);
         $pdf->Cell(30, 6, $row['tgllhr'], 1, 1);
     }
 
